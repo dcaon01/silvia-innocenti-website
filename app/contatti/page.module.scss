@@ -38,6 +38,19 @@
     justify-content: space-between;
 }
 
+.buttonSection {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    height: 42px;
+}
+
+.message {
+    font-size: 0.9rem;
+    color: green;
+}
+
 .input:focus, .textarea:focus {
     outline: none;
     border-color: #666;
