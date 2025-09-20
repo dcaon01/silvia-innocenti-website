@@ -1,17 +1,19 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Nunito } from "next/font/google"; 
 import "./globals.scss";
 import Navbar from "@/components/molecules/navbar/Navbar";
 import Footer from "@/components/molecules/footer/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
   subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const nunito = Nunito({
   subsets: ["latin"],
+  variable: "--font-nunito",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -19,6 +21,11 @@ export const metadata: Metadata = {
   description: "Architetto Silvia Innocenti",
 };
 
+/**
+ * Root layout component that wraps the entire application.
+ * Renders the Navbar at the top, the Footer at the bottom,
+ * @param children - The child components to be rendered within the layout.
+ */
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -26,7 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${inter.className}`}>
         <Navbar />
         {children}
         <Footer />
