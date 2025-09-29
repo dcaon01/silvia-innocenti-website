@@ -1,6 +1,7 @@
 :root {
   --background: #ffffff;
   --si-grey: #9b9895;
+  --si-grey-light: hsl(36, 5%, 81%);
 }
 
 body {
@@ -20,7 +21,7 @@ main {
   width: 100%;
   justify-content: center;
   flex-direction: column;
-  gap: 30px;
+  gap: 100px;
 }
 
 h1 {

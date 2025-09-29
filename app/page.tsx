@@ -58,11 +58,12 @@ export default function Home() {
           </p>
           <Link href="/profile">Scopri di più</Link>
         </div>
-        <img src="/profile-photo.png" alt="Profile Image" className={classes.profileImage} />
+        <div className={classes.photoContainer}>
+          <img src="/profile-photo.png" alt="Profile Image" className={classes.profileImage} />
+        </div>
       </div>
 
       { /* Projects Section */}
-
     </main>
   );
 }

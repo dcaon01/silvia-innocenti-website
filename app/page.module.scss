@@ -57,4 +57,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 50px;
+}
+
+.profileTextContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    max-width: 600px;
+    width: 60%;
+    text-align: left;
+}
+
+.photoContainer {
+    display: flex;
+    width: 30%;
+    justify-content: right;
+    align-items: center;
 }
