@@ -1,0 +1,60 @@
+.heroSection {
+    display: flex;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: black;
+}
+
+.heroSection:hover > .heroImage {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+.heroImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.4s ease-in-out;
+}
+
+.heroTextContainer {
+    position: relative;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    z-index: 1;
+    width: 100%;
+    padding: 0 80px;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.heroTextContainer:hover > .heroImage {
+    opacity: 0.8;
+}
+
+.heroQuote {
+    z-index: 1;
+    color: white;
+    position: relative;
+    font-size: 2.5rem;
+    font-style: italic;
+}
+
+.heroAuthor {
+    z-index: 1;
+    color: white;
+    position: relative;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.profileSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
